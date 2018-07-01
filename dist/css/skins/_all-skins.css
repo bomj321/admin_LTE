@@ -60,6 +60,7 @@
 .skin-blue .main-sidebar,
 .skin-blue .left-side {
   background-color: #222d32;
+
 }
 .skin-blue .user-panel > .info,
 .skin-blue .user-panel > .info > a {
@@ -74,11 +75,18 @@
 }
 .skin-blue .sidebar-menu > li:hover > a,
 .skin-blue .sidebar-menu > li.active > a {
-  color: #ffffff;
+  /*color: #ffffff;
   background: #1e282c;
-  border-left-color: #3c8dbc;
+  border-left-color: #3c8dbc;*/  /************************************************************MODIFICADO*/
 }
 .skin-blue .sidebar-menu > li > .treeview-menu {
+
+  margin: 0 1px;
+  /*background: #2c3b41;*/
+}
+
+
+.sidebar-collapse .sidebar-menu > li > .treeview-menu {
   margin: 0 1px;
   background: #2c3b41;
 }
@@ -89,11 +97,17 @@
   text-decoration: none;
 }
 .skin-blue .treeview-menu > li > a {
-  color: #8aa4af;
+  font-size: 1.1em;
+  color: white;
+}
+
+li a span {
+  font-size: 1.2em;
+  color: white;
 }
 .skin-blue .treeview-menu > li.active > a,
 .skin-blue .treeview-menu > li > a:hover {
-  color: #ffffff;
+  background-color: #374A5E;
 }
 .skin-blue .sidebar-form {
   border-radius: 3px;

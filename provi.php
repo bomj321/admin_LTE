@@ -18,7 +18,7 @@ $resul = mysqli_query($con,$sql);
             <select name="Canton" class="form-control">
              <?php
         while($result=mysqli_fetch_array($resul)){ ?>
-              <option value="<?php  echo  $result['id_canto'];?>"><?php  echo  utf8_encode($result['nom_canto']);?></option>
+              <option value="<?php  echo  $result['id_canto'];?>"><?php  echo  $result['nom_canto'];?></option>
               <?php } ?>
             </select>
 

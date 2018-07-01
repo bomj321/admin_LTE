@@ -21,7 +21,8 @@ session_start();
   <link rel="stylesheet" href="dist/css/AdminLTE.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
+  <link rel="stylesheet" type="text/css" href="animate.css">
   <link rel="stylesheet" type="text/css" href="estilos.css">
 
   <!--ZOOM PARA IMAGENES -->
@@ -71,16 +72,10 @@ $url = explode(".", $ce);
 <body class="hold-transition skin-blue sidebar-mini" >
 <div class="wrapper">
 
-   <header class="main-header">
-    <!-- Logo -->
-    <a href="" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>Y</b>D</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b></b>Facto</span>
-    </a>
+   <header class="main-header" >
+   
     <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
+    <nav class="navbar navbar-static-top" style="background-color: #769CC3;">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
@@ -134,7 +129,7 @@ $url = explode(".", $ce);
 
 
   <!-- Left side column. contains the logo and sidebar -->
- <aside class="main-sidebar">
+ <aside class="main-sidebar" style="background-color: #2A3F54; color: white;">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
@@ -142,7 +137,7 @@ $url = explode(".", $ce);
         <div class="pull-left image">
           <img src="dist/img/avatar5.png" width="160px" height="160px" class="img-circle" alt="User Image">
         </div>
-        <div class="pull-left info">
+        <div class="pull-left info" style="font-size: 2em;">
           <p><?php echo $_SESSION['nombres'];?> </p>
         </div>
       </div>
@@ -199,7 +194,14 @@ include("menu.php");?>
     $bloque6= mysqli_query($con, "SELECT * FROM empleados WHERE Bloque='6'");
           $bloque6_row= mysqli_num_rows($bloque6);
    
-  $total=  $bloque1_row+ $bloque2_row+ $bloque3_row+ $bloque4_row+ $bloque5_row+ $bloque6_row;        
+  $total=  $bloque1_row+ $bloque2_row+ $bloque3_row+ $bloque4_row+ $bloque5_row+ $bloque6_row; 
+
+
+  if($total ==0){
+
+
+    $total = 1;
+  }       
                
   ?>
                           <!--CONSULTAS SQL-->
@@ -259,9 +261,22 @@ include("menu.php");?>
 
             </div>
 
-            <div class="row " >            
+            <div class="row " > 
+                
+                  <?php
+                    if ($bloque1_row==0 AND $bloque2_row==0 AND $bloque3_row==0 AND $bloque4_row==0 AND $bloque5_row==0 AND $bloque6_row==0) { 
+                  ?>
+
+                   <center><h2>NO HAY INFORMACION DISPONIBLE</h2></center>
+                 
+                  <?php
+                    }else{
+                  ?>
+
                 <div class="col-md-9 col-sm-9 col-xs-9 ">
-                  <canvas id="myChart"></canvas>
+                  
+                     <canvas id="myChart"></canvas>
+                
                 </div>
 
                 <div class="col-md-3 col-sm-3 col-xs-2 menu_abierta" id="menu_id">
@@ -292,6 +307,12 @@ include("menu.php");?>
                       </li>
                   </ul>
                  </div>
+
+                  <?php
+                    }
+                  ?>
+
+
              </div>
 
     </section>

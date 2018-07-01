@@ -21,8 +21,10 @@ session_start();
   <link rel="stylesheet" href="dist/css/AdminLTE.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
   <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+
 
   <!--ZOOM PARA IMAGENES -->
 
@@ -72,15 +74,9 @@ $url = explode(".", $ce);
 <div class="wrapper">
 
    <header class="main-header">
-    <!-- Logo -->
-    <a href="" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>Y</b>D</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b></b>Facto</span>
-    </a>
+    
     <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
+    <nav class="navbar navbar-static-top" style="background-color: #769CC3;">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
@@ -134,7 +130,7 @@ $url = explode(".", $ce);
 
 
   <!-- Left side column. contains the logo and sidebar -->
- <aside class="main-sidebar">
+ <aside class="main-sidebar" style="background-color: #2A3F54; color: white;">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
@@ -142,7 +138,7 @@ $url = explode(".", $ce);
         <div class="pull-left image">
           <img src="dist/img/avatar5.png" width="160px" height="160px" class="img-circle" alt="User Image">
         </div>
-        <div class="pull-left info">
+        <div class="pull-left info" style="font-size: 2em;">
           <p><?php echo $_SESSION['nombres'];?> </p>
         </div>
       </div>

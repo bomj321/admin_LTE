@@ -17,7 +17,7 @@
 				<!--	<form class="form-horizontal" enctype="multipart/form-data" method="POST" action="ajax/importar_data.php">-->
                             <div class="form-group col-md-12">
 		                              <label class="control-label">Seleccione Archivo</label>
-		                                <input class="form-control" required="true" type="file" name="importar_archivo">
+		                                <input class="form-control" required="true" type="file" name="importar_archivo" id="input_file">
 
                              </div>
 

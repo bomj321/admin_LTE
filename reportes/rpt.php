@@ -36,11 +36,11 @@ $total=0;
 
 //valores de la tabla
 while($row=mysqli_fetch_array($user)){
-  $registro[$titulo[0]]= $row['Cedula'];
-  $registro[$titulo[1]]= $row['Nombre'];
-  $registro[$titulo[2]]= $row['Email'];
-  $registro[$titulo[3]]= $row['ClaveATV'];
-  $registro[$titulo[4]]= $row['Bloque'];
+  $registro[$titulo[0]]= utf8_decode($row['Cedula']);
+  $registro[$titulo[1]]= utf8_decode($row['Nombre']);
+  $registro[$titulo[2]]= utf8_decode($row['Email']);
+  $registro[$titulo[3]]= utf8_decode($row['ClaveATV']);
+  $registro[$titulo[4]]= utf8_decode($row['Bloque']);
 
   $tabla[]=$registro;
 }

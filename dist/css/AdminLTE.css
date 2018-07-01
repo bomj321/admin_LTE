@@ -636,12 +636,13 @@ a:focus {
     padding-bottom: 5px;
     border-bottom-right-radius: 4px;
   }
-  .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > span:not(.pull-right),
+  /*.sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > span:not(.pull-right),*/ /******************TITULO HOVER****/
   .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu {
     display: block !important;
     position: absolute;
+    margin-top: -45px;
     width: 180px;
-    left: 50px;
+    left: 61px; /***********************MENU**********************************/
   }
   .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > span {
     top: 0;
@@ -684,7 +685,7 @@ a:focus {
     display: none;
   }
   .sidebar-mini.sidebar-collapse .main-header .navbar { /****************ANCHO HEADER*************************/
-    margin-left: 62px;
+    margin-left: 64px;
   }
 }
 .sidebar-menu,
