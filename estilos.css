@@ -1,0 +1,474 @@
+/****************************************************************************ESTILOS PARA LA PAGE ESTADISTICA*****/
+
+/*************************************ESTADISTICA TOP*********************************************/
+.div_externo{
+	color: #73879C;
+	margin-left: 0.18rem;
+	margin-right: 0.18rem;
+  margin-bottom: 4em;
+
+}
+
+
+.icono-fa{
+   margin-right: 0.8rem;
+}
+.div_externo h1{
+	margin-top: -1rem;
+	font-weight: 900;
+	font-size: 5rem;
+}
+
+.div_externo h2{
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+.linea_divisoria1, .linea_divisoria2, .linea_divisoria3{
+   width: 0;
+   margin-top: 2rem;
+   height: 6em;
+   border-right: 4px solid #ADB2B5 ;
+}
+
+
+/***********************MEDIA QUERYS BLOQUES************************/
+
+@media screen and (max-width: 1196px) {   
+ .linea_divisoria1, .linea_divisoria2, .linea_divisoria3{
+    margin-left: -1rem;
+}  
+
+}
+@media screen and (max-width: 989px) {   
+
+.div_externo h1{
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.div_externo h2{
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+ .linea_divisoria2{
+    border-right: none;
+}
+
+.linea_horizontal{
+  border-bottom: 0.7px solid #ADB2B5;
+  margin-top: 12rem;
+
+}    
+} 
+
+@media screen and (max-width: 832px) {  
+
+.div_externo h2{
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.linea_divisoria1, .linea_divisoria3{
+  
+   border-right: 1px solid #ADB2B5 ;
+}
+
+
+} 
+
+@media screen and (max-width: 345px) {  
+
+.linea_divisoria1, .linea_divisoria3{
+  margin-left: -1.5rem;
+     height: 5em;
+
+  
+}
+
+.div_externo h1{
+  margin-top: -1rem;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.div_externo h2{
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.linea_horizontal{
+  margin-top: 11rem;
+}    
+
+
+} 
+
+@media screen and (max-width: 336px) {  
+
+.linea_divisoria1, .linea_divisoria3{
+  margin-left: -2rem;
+     height: 5em;
+
+  
+}
+
+.div_interno_bloque2{
+  margin-bottom: -10rem;
+  margin-left: -2rem;
+}
+
+.div_interno_bloque4{
+  margin-left: -2rem;
+}
+
+} 
+
+@media screen and (max-width: 240px) {  
+
+.linea_divisoria1, .linea_divisoria3{
+  margin-left: -2.2rem;
+     height: 5em;
+
+  
+}
+
+.div_interno_bloque2{
+  margin-bottom: -10rem;
+  margin-left: -3rem;
+}
+
+.div_interno_bloque4{
+  margin-left: -3rem;
+}
+
+} 
+
+
+@media screen and (max-width: 220px) {  
+
+.linea_divisoria1, .linea_divisoria3{
+  margin-left: -2.08rem;
+
+  
+}
+
+.div_interno_bloque2{
+  margin-left: -4rem;
+}
+
+.div_interno_bloque4{
+  margin-left: -4rem;
+}
+
+} 
+
+/***********************MEDIA QUERYS BLOQUES*************************/
+
+
+/*************************************ESTADISTICA CIERRE TOP*********************************************/
+
+/*********************************************GRAFICOS****************************************/
+.lista_porcentaje{
+       list-style:none;
+       margin-left: -8em;
+       }
+.lista_porcentaje li{
+  margin-top: 1em;
+}
+.sinborde{
+  font-size: 1.5em ;
+}
+
+#caja1{
+    position: absolute;
+    top: 1.1em;
+    left: -11em;
+    height: 1em;
+    width: 1em;
+    background-color: #C64134;
+    margin-left: 5em;
+}
+
+#caja2{
+    position: absolute;
+    top: 3.5em;
+    left: -11em;
+    height: 1em;
+    width: 1em;
+    background-color: #24B092;
+    margin-left: 5em;
+}
+#caja3{
+    position: absolute;
+    top: 5.9em;
+    left: -11em;
+    height: 1em;
+    width: 1em;
+    background-color: #3291D1;
+    margin-left: 5em;
+}
+
+#caja4{
+    position: absolute;
+    top: 8.3em;
+    left: -11em;
+    height: 1em;
+    width: 1em;
+    background-color: #BDC3C7;
+    margin-left: 5em;
+}
+
+#caja5{
+    position: absolute;
+    top: 10.7em;
+    left: -11em;
+    height: 1em;
+    width: 1em;
+    background-color: #9A58B5;
+    margin-left: 5em;
+}
+
+#caja6{
+    position: absolute;
+    top: 13.1em;
+    left: -11em;
+    height: 1em;
+    width: 1em;
+    background-color: #455C73;
+    margin-left: 5em;
+}
+.menu_altura{
+  margin-top: 3.5em;
+}
+
+@media screen and (min-width: 1230px) {  
+
+
+
+.menu_abierta{
+  margin-top: 3em;
+}
+}
+
+@media screen and (max-width: 1137px) {  
+
+.menu_altura{
+  margin-top: 1em;  
+}
+
+}
+
+@media screen and (max-width: 989px) { 
+
+  .menu_altura{
+  margin-top: 0.5em;  
+}
+
+.menu_abierta{
+  margin-top: 1em; 
+  font-size: 0.8em; 
+}
+
+}
+
+@media screen and (max-width: 900px) { 
+
+  .menu_altura{
+  margin-top: -0.5em;  
+}
+
+.menu_abierta{
+  margin-top: -0.5em; 
+}
+
+}
+
+@media screen and (max-width: 832px) {  
+
+ .menu_altura{
+  margin-top: -1em;  
+}
+
+.menu_abierta{
+  margin-top: -1em; 
+}
+
+
+} 
+
+@media screen and (max-width: 761px) {  
+
+ .menu_abierta{
+  margin-top: -1.5em;  
+
+}
+} 
+
+@media screen and (max-width: 600px) {  
+
+ .menu_abierta{
+ font-size: 0.7em; 
+
+} 
+}
+
+@media screen and (max-width: 500px) {  
+
+ .menu_abierta{
+ font-size: 0.6em; 
+
+} 
+}
+
+@media screen and (max-width: 420px) {  
+
+ 
+.lista_porcentaje li{
+  margin-top: 0.5em;
+}
+
+#caja1{
+  
+    top: 0.9em;
+    
+}
+
+#caja2{
+    top: 2.6em;
+   
+}
+#caja3{
+    top: 4.3em;
+   
+}
+
+#caja4{
+    top: 6.3em;
+   
+}
+
+#caja5{
+    top: 8em;
+    
+}
+
+#caja6{
+    top: 10em;
+  
+}
+.menu_abierta{
+  margin-left: 2em;
+}
+
+
+
+
+}
+
+@media screen and (max-width: 300px) {  
+
+ .menu_abierta{
+ font-size: 0.5em; 
+
+}
+} 
+
+@media screen and (max-width: 300px) {  
+
+ .menu_abierta{
+ font-size: 0.4em; 
+
+}
+
+} 
+
+@media screen and (max-width: 216px) {  
+
+ .div_externo h1{
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.div_externo h2{
+  font-size: 0.5rem;
+  font-weight:2rem;
+}
+
+.linea_divisoria1, .linea_divisoria3{
+  position: absolute;
+     margin-left: 1.5em;
+     height: 3em; 
+}
+
+.linea_horizontal{
+  margin-top: 7.5rem;
+}    
+
+} 
+
+@media screen and (max-width: 206px) {  
+
+
+
+.div_externo h2{
+  font-size: 0.5rem;
+  font-weight:2rem;
+}
+
+.linea_divisoria1, .linea_divisoria3{
+     margin-left: 1em;
+}
+ 
+
+} 
+
+
+
+/*********************************************GRAFICOS CIERRE****************************************/
+
+/****************************************************************************ESTILOS PARA LA PAGE ESTADISTICA*****/
+
+/*********************************************************ESTILOS PARA LA PAGE DE REPORTES.PHP*****************/
+
+.div_botones{
+  margin-top: 10em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************************************ESTILOS PARA LA PAGE DE REPORTES.PHP**********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
