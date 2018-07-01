@@ -172,7 +172,7 @@ include("menu.php");?>
           <div class="col-xs-12">
             <div class="box">
               <div class="box-header">
-                <h3 class="box-title">Importar Archivo</h3>
+                <h3 class="box-title">Importar Excel</h3>
               </div>
 
             
@@ -183,7 +183,7 @@ include("menu.php");?>
 
           <div class="row">
           	<div class="col-md-9 col-sm-12 col-xs-12">
-          		<center><h1>Importar Archivo</h1></center>
+          		<center><h1>Importar Excel</h1></center>
           	<center style="margin-top: 4em;"><button class="btn btn-lg btn-primary" data-toggle="modal" data-target="#importar" >Importar</button></center>
 
           	</div>
