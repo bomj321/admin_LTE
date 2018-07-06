@@ -25,6 +25,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="animate.css">
 
 
+
   <!--ZOOM PARA IMAGENES -->
 
 </head>
@@ -96,28 +97,24 @@ $url = explode(".", $ce);
               <img src="dist/img/avatar5.png" width="160px" height="160px" class="user-image" alt="User Image">
               <span class="hidden-xs"><?php echo $_SESSION['nombres'];?> </span>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" >
               <!-- User image -->
-              <li class="user-header">
-                <img src="dist/img/avatar5.png" width="160px" height="160px" class="img-circle" alt="User Image">
-
-                <p>
-                  <?php echo $_SESSION['nombres'];?> 
-                  <small>Admin</small>
-                </p>
-              </li>
+             
+             
               <!-- Menu Body -->
-              <li class="user-body">
+              <li class="user-body" id="boton_logout">
+                <div class="pull-left" id="tamaño" >
+                  <a href="cerrar.php" class="btn btn-flat" id="boton_size" >Cerrar Sesión
+                 <i id="icono_logout" class="fa fa-sign-out" aria-hidden="true"></i>
+                  </a>
+                </div>
+
+               
                 
                 <!-- /.row -->
               </li>
               <!-- Menu Footer-->
-              <li class="user-footer">
-                
-                <div class="pull-right">
-                  <a href="cerrar.php" class="btn btn-default btn-flat">Cerrar Sesión</a>
-                </div>
-              </li>
+              
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
@@ -269,6 +266,8 @@ echo
                   <label for="exampleInputEmail1">ClaveATV</label>
                   <input type="text" disabled class="form-control" id="exampleInputEmail1" value="<?php  echo  $datos['ClaveATV'];?>" >
                 </div>
+
+
                 <div class="form-group">
                   <?php if($datos['Bloque'] == '1'){
                 echo '<span class="label label-success">Bloque1</span>';
@@ -283,6 +282,8 @@ echo
                 echo '<span class="label label-info">Bloque4</span>';
               } ?>
                 </div>
+
+                
 <div class="form-group">
                   <label for="exampleInputEmail1">Credenciales</label>
  <a href="img-credenciales/<?php echo $datos['img_emple']; ?>"><img id="" src="img-credenciales/<?php echo $datos['img_emple']; ?>" alt="Credenciales" style="width: 100%;" height="300"></a>

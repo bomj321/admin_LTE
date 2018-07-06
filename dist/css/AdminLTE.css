@@ -4947,3 +4947,19 @@ table.text-center th {
     white-space: normal !important;
   }
 }
+
+/*********************ESTILOS************/
+#boton_logout:hover{
+   background-color:#D9DEE4;
+   border:none;
+  }
+
+
+
+  #boton_size{
+    font-size: 1.4em;
+  }
+
+  #icono_logout{
+   margin-left: 4em;
+  }

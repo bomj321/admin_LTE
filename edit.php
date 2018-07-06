@@ -21,9 +21,7 @@ session_start();
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
-    <link rel="stylesheet" type="text/css" href="animate.css">
-
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
   <script>
 function mostrar(){
 
@@ -115,7 +113,7 @@ $plane =mysqli_query($con,$sql2);
       <span class="logo-lg"><b></b>Facto</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top"  style="background-color: #769CC3;">
+    <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
@@ -169,7 +167,7 @@ $plane =mysqli_query($con,$sql2);
 
 
   <!-- Left side column. contains the logo and sidebar -->
- <aside class="main-sidebar" style="background-color: #2A3F54; color: white;">
+ <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
@@ -177,7 +175,7 @@ $plane =mysqli_query($con,$sql2);
         <div class="pull-left image">
           <img src="dist/img/avatar5.png" width="160px" height="160px" class="img-circle" alt="User Image">
         </div>
-        <div class="pull-left info" style="font-size: 2em;">
+        <div class="pull-left info">
           <p><?php echo $_SESSION['nombres'];?> </p>
         </div>
       </div>

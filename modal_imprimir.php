@@ -9,15 +9,15 @@
 
 
         <div class="modal-body">         
-                    <form class="form-horizontal" action="reportes/rpt.php" method="post">
+                    <form class="form-horizontal" action="reportes/rpt.php" method="post">z
 
                             <div class="form-group col-md-12">
                                   <label class="control-label">Bloque</label>
                                     <select class="form-control" name="Bloque" class="form-control">
-                                                    <option value="1">Bloque1</option>
-                                      <option value="2">Bloque2</option>
+                                        <option value="1">Bloque1</option>
+                                        <option value="2">Bloque2</option>
                                         <option value="3">Bloque3</option>
-                                      <option value="4">Bloque4</option>
+                                        <option value="4">Bloque4</option>
                                     </select>
                                 </div>
 

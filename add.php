@@ -103,26 +103,16 @@ $provi =mysqli_query($con,$sql1);
               <span class="hidden-xs"><?php echo $_SESSION['nombres'];?> </span>
             </a>
             <ul class="dropdown-menu">
-              <!-- User image -->
-              <li class="user-header">
-                <img src="dist/img/avatar5.png" width="160px" height="160px" class="img-circle" alt="User Image">
+              <li class="user-body" id="boton_logout">
+                <div class="pull-left" id="tamaño" >
+                  <a href="cerrar.php" class="btn btn-flat" id="boton_size" >Cerrar Sesión
+                 <i id="icono_logout" class="fa fa-sign-out" aria-hidden="true"></i>
+                  </a>
+                </div>
 
-                <p>
-                  <?php echo $_SESSION['nombres'];?> 
-                  <small>Admin</small>
-                </p>
-              </li>
-              <!-- Menu Body -->
-              <li class="user-body">
+               
                 
                 <!-- /.row -->
-              </li>
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                
-                <div class="pull-right">
-                  <a href="cerrar.php" class="btn btn-default btn-flat">Cerrar Sesion</a>
-                </div>
               </li>
             </ul>
           </li>

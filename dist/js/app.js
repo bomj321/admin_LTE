@@ -797,13 +797,12 @@ function importar(){
 
   var clave_importar=document.getElementById('clave_importar').value;
   var input_file=document.getElementById('input_file').value;
-  var cadena_jpeg = input_file.search(".jpeg")
-  var cadena_git =  input_file.search(".git")
-  var cadena_png =  input_file.search(".png")
-  var cadena_jpg =  input_file.search(".jpg")
+  var cadena_xls = input_file.search(".xls")
+  var cadena_xlsx =  input_file.search(".xlsx")
+ 
       //Inicia validacion
       //
-     if (cadena_jpeg==-1 && cadena_git==-1 && cadena_png==-1 && cadena_jpg==-1)
+     if (cadena_xls==-1 && cadena_xlsx==-1 )
       {
       $("#mensaje").addClass('alert alert-danger alert-dismissable text-center mensaje_alerta_importacion');
       $('#mensaje').text('Tipo de Archivo Incorrecto');
